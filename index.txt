@@ -23,6 +23,7 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Articles</a></li>
                     <li class="nav-item"><a class="nav-link" href="#presentations">Presentations</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
@@ -112,6 +113,29 @@
             </div>
         </div>
     </section>
+
+<!-- Blog/Publications Section -->
+<section id="blog" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title">Articles & Analysis</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <span class="article-date">January 2024</span>
+                        <h3 class="card-title">The Economic Consequences of Military Rule: A Comparative Analysis</h3>
+                        <p class="card-text">This insightful analysis explores how military governance impacts national economies around the world. Drawing from historical examples across Asia, Africa, and Latin America, the article examines the complex relationship between military rule and economic development.</p>
+                        <div class="mt-3">
+                            <a href="blog/military-rule-analysis.pdf" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-file-pdf me-2"></i>Read PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Presentations Section -->
     <section id="presentations" class="py-5">
