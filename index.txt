@@ -165,12 +165,30 @@
     </div>
 </section>
 
-            <!-- Presentation 2 -->
+            <!-- Presentations Section -->
+<section id="presentations" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="section-title">Academic Presentations</h2>
+        <div class="row">
+            <!-- Presentation 1: Salinity -->
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title">Increase in Water and Soil Salinity in Bangladesh</h3>
+                        <p class="card-text">A comprehensive analysis of the growing salinity crisis in Bangladesh, examining environmental impacts, socio-economic consequences, and potential solutions.</p>
+                        <a href="presentations/salinity.pptx" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-file-powerpoint me-2"></i>Download Presentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Presentation 2: Military Rule -->
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
                         <h3 class="card-title">The Economic Consequences of Military Rule</h3>
-                        <p class="card-text">A comprehensive study of how military governance affects national economic development and stability.</p>
+                        <p class="card-text">An examination of how military governance affects economic development, stability, and growth across different regions and time periods.</p>
                         <a href="presentations/military-rule.pptx" class="btn btn-primary" target="_blank">
                             <i class="fas fa-file-powerpoint me-2"></i>Download Presentation
                         </a>
@@ -178,12 +196,12 @@
                 </div>
             </div>
 
-            <!-- Presentation 3 -->
+            <!-- Presentation 3: Elections -->
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h3 class="card-title">Elections in Bangladesh: Caretaker Government</h3>
-                        <p class="card-text">Analysis of Bangladesh's experiment with the non-party caretaker government system in elections.</p>
+                        <h3 class="card-title">Elections in Bangladesh: Experiment with the Non-Party Caretaker Government</h3>
+                        <p class="card-text">A detailed study of Bangladesh's unique experience with the caretaker government system in managing electoral transitions.</p>
                         <a href="presentations/caretaker-govt.pptx" class="btn btn-primary" target="_blank">
                             <i class="fas fa-file-powerpoint me-2"></i>Download Presentation
                         </a>
@@ -193,7 +211,6 @@
         </div>
     </div>
 </section>
-
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
