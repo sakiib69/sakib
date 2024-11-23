@@ -120,7 +120,7 @@
                     <div class="card-body">
                         <span class="article-date">January 2024</span>
                         <h3 class="card-title">The Economic Consequences of Military Rule: A Comparative Analysis</h3>
-                        <p class="card-text">This insightful analysis explores how military governance impacts national economies around the world. Drawing from historical examples across Asia, Africa, and Latin America, the article examines the complex relationship between military rule and economic development.</p>
+                        <p class="card-text">An in-depth examination of how military regimes affect national economies, analyzing patterns across different regions and historical periods to understand the long-term impacts of military governance on economic development.</p>
                         <div class="mt-3">
                             <a href="blog/military-rule-analysis.pdf" class="btn btn-primary" target="_blank">
                                 <i class="fas fa-file-pdf me-2"></i>Read PDF
@@ -136,7 +136,7 @@
                     <div class="card-body">
                         <span class="article-date">January 2024</span>
                         <h3 class="card-title">The Cold War and Its Battle for Global Ideological Dominance</h3>
-                        <p class="card-text">This article explores the Cold War, a pivotal period of the 20th century characterized by a deep ideological conflict between capitalism, supported by the US, and socialism, supported by the USSR. It looks at the rivalry's effects on the world at large, including espionage, the nuclear weapons race, proxy conflicts, and the forming of military alliances. The essay also looks at how the Cold War influenced global affairs, left a geopolitical legacy, and still has an impact on the contemporary world.</p>
+                        <p class="card-text">Explores the intense ideological struggle between the United States and Soviet Union, examining how their competition for global influence shaped international relations and continues to resonate in today's world.</p>
                         <div class="mt-3">
                             <a href="blog/cold-war-analysis.pdf" class="btn btn-primary" target="_blank">
                                 <i class="fas fa-file-pdf me-2"></i>Read PDF
@@ -152,7 +152,7 @@
                     <div class="card-body">
                         <span class="article-date">January 2024</span>
                         <h3 class="card-title">The Evolution of the World System: From Ancient Trade Networks to Contemporary Global Order</h3>
-                        <p class="card-text">This study examines the growth of the World System, from early trade networks to the current period of globalization. It dives into the origins of capitalism, the influence of imperialism, the beginnings of industrialization, and the ideological conflicts that emerged during the Cold War. The report also looks at the transition to a post-Cold War, multipolar world, emphasizing the emergence of rising economies such as China and India. This article analyzes significant historical events, economic systems, and geopolitical movements to give a complete picture of how global power structures and economic interactions arose and continue to impact international relations now.</p>
+                        <p class="card-text">Traces the transformation of global interconnections from ancient trade routes to today's digital age, revealing how international systems of commerce and power have evolved throughout history.</p>
                         <div class="mt-3">
                             <a href="blog/world-system-evolution.pdf" class="btn btn-primary" target="_blank">
                                 <i class="fas fa-file-pdf me-2"></i>Read PDF
@@ -164,23 +164,6 @@
         </div>
     </div>
 </section>
-<!-- Presentations Section -->
-<section id="presentations" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="section-title">Academic Presentations</h2>
-        <div class="row">
-            <!-- Presentation 1 -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h3 class="card-title">Water and Soil Salinity in Bangladesh</h3>
-                        <p class="card-text">An analysis of increasing salinity issues in Bangladesh, examining causes, impacts, and potential solutions.</p>
-                        <a href="presentations/salinity.pptx" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-file-powerpoint me-2"></i>Download Presentation
-                        </a>
-                    </div>
-                </div>
-            </div>
 
             <!-- Presentation 2 -->
             <div class="col-md-4">
