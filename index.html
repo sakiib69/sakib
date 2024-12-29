@@ -7,6 +7,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom Styles */
+        .hero {
+            background: url('images/hero-background.jpg') no-repeat center center/cover;
+            color: white;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background: #007bff;
+            margin: 10px auto;
+        }
+        .card {
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -21,8 +66,8 @@
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#presentations">Presentations</a></li>
                     <li class="nav-item"><a class="nav-link" href="#blog">Articles</a></li>
-                   <li class="nav-item"><a class="nav-link" href="#presentations">Presentations</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -35,68 +80,56 @@
             <div class="row align-items-center min-vh-100">
                 <div class="col-md-6">
                     <h1>Sakib Al Hasan</h1>
-                    <h2>Political Science Student</h2>
+                    <h2>Political Science Scholar</h2>
                     <p>Fourth-year honors student at University of Chittagong</p>
                     <a href="#contact" class="btn btn-primary">Get in Touch</a>
                 </div>
                 <div class="col-md-6 text-center">
                     <div class="profile-image-container">
-                        <img src="images/profile-photo.jpg" alt="Sakib Al Hasan" class="profile-image">
+                        <img src="images/profile-photo.jpg" alt="Sakib Al Hasan" class="profile-image rounded-circle" style="width: 200px; height: 200px;">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-   <!-- About Section -->
-<section id="about" class="py-5">
-    <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <p>I am a Political Science graduate from the University of Chittagong, currently pursuing my Master's in the same field. I grew up in Sylhet, a city with a rich historical and cultural background, which has greatly influenced my academic and personal interests. My focus areas include geopolitics, warfare, and strategy, particularly recent world geopolitical events and Bangladeshi political issues.</p>
-                
-                <p>As the General Secretary of the Chittagong University Chess Club and a debater in the Chittagong University Debate Society (CUDS), where I also served as a competition judge, I have been actively involved in both leadership and debate.</p>
-                
-                <p id="more" style="display: none;">
-                    My discipline and leadership abilities were further refined throughout my tenure with the Bangladesh National Cadet Core (BNCC) through a variety of camps and exercises. In addition to my studies, I have a strong interest in medieval geopolitics, the lifestyles of medieval lords, and the ruling systems of dynasties. I am also conducting research on contemporary political issues, including the impact of US Foreign Policy and NATO's Campaign in Afghanistan. Through this platform, I aim to share my research and insights on politics, history, and global challenges. Feel free to connect if you would like to discuss these topics further.
-                </p>
-                
-                <a href="javascript:void(0);" id="moreLink" onclick="toggleMore()" style="color: blue; text-decoration: underline;">More</a>
-            </div>
-            <div class="col-md-6">
-                <h3>Education</h3>
-                <ul>
-                    <li>Master's in Political Science - University of Chittagong (Current)</li>
-                    <li>Bachelor's in Political Science - University of Chittagong</li>
-                    <li>12th Grade - Jalalabad Cantonment Public School and College</li>
-                </ul>
-                <h3>Research Interests</h3>
-                <ul>
-                    <li>Evolution of Political Systems (Monarchy to Democracy)</li>
-                    <li>NATO's Campaign in Afghanistan</li>
-                    <li>Contemporary Geopolitical Issues</li>
-                    <li>Bangladesh Political Systems</li>
-                </ul>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <p>I graduated from the University of Chittagong with a degree in Political Science and am currently studying for a Master's degree in the same discipline. My childhood in the historically and culturally rich city of Sylhet has had a significant impact on both my academic and personal interests.</p>
+                            <p>Geopolitics, warfare, and strategy are my main areas of interest; I pay special attention to current global geopolitical developments as well as political concerns in Bangladesh.</p>
+                            <p>As the General Secretary of the Chittagong University Chess Club and a debater in the Chittagong University Debate Society (CUDS), I have been actively involved in both leadership and debate.</p>
+                            <p><a href="javascript:void(0);" id="moreLink" onclick="toggleMore()" style="color: blue; text-decoration: underline;">More</a></p>
+                            <p id="more" style="display: none;">
+                                My discipline and leadership abilities were further refined throughout my tenure with the Bangladesh National Cadet Core (BNCC) through a variety of camps and exercises. In addition to my studies, I have a strong interest in medieval geopolitics, the lifestyles of medieval lords, and the ruling systems of dynasties. I am also conducting research on contemporary political issues, including the impact of US Foreign Policy and NATO's Campaign in Afghanistan. Through this platform, I aim to share my research and insights on politics, history, and global challenges. Feel free to connect if you would like to discuss these topics further.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>Master's in Political Science - University of Chittagong (Current)</li>
+                        <li>Bachelor's in Political Science - University of Chittagong</li>
+                        <li>12th Grade - Jalalabad Cantonment Public School and College</li>
+                    </ul>
+                    <h3>Research Interests</h3>
+                    <ul>
+                        <li>Evolution of Political Systems (Monarchy to Democracy)</li>
+                        <li>NATO's Campaign in Afghanistan</li>
+                        <li>Contemporary Geopolitical Issues</li>
+                        <li>Bangladesh Political Systems</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<script>
-function toggleMore() {
-    var moreText = document.getElementById("more");
-    var moreLink = document.getElementById("moreLink");
-    if (moreText.style.display === "none") {
-        moreText.style.display = "block";
-        moreLink.innerHTML = "Less";
-    } else {
-        moreText.style.display = "none";
-        moreLink.innerHTML = "More";
-    }
-}
-</script>
-</section>
     <!-- Research Section -->
     <section id="research" class="py-5 bg-light">
         <div class="container">
@@ -130,108 +163,109 @@ function toggleMore() {
         </div>
     </section>
 
-   <!-- Blog/Publications Section -->
-<section id="blog" class="py-5">
-    <div class="container">
-        <h2 class="section-title">Articles & Analysis</h2>
-        <div class="row">
-            <!-- First Article: Military Rule -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <span class="article-date">January 2024</span>
-                        <h3 class="card-title">The Economic Consequences of Military Rule: A Comparative Analysis</h3>
-                        <p class="card-text">An in-depth examination of how military regimes affect national economies, analyzing patterns across different regions and historical periods to understand the long-term impacts of military governance on economic development.</p>
-                        <div class="mt-3">
-                            <a href="blog/military-rule-analysis.pdf" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-file-pdf me-2"></i>Read PDF
+    <!-- Presentations Section -->
+    <section id="presentations" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Academic Presentations</h2>
+            <div class="row">
+                <!-- Presentation 1: Salinity -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Increase in Water and Soil Salinity in Bangladesh</h3>
+                            <p class="card-text">A comprehensive analysis of the growing salinity crisis in Bangladesh, examining environmental impacts, socio-economic consequences, and potential solutions.</p>
+                            <a href="presentations/salinity.pptx" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-file-powerpoint me-2"></i>Download Presentation
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Second Article: Cold War -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <span class="article-date">January 2024</span>
-                        <h3 class="card-title">The Cold War and Its Battle for Global Ideological Dominance</h3>
-                        <p class="card-text">Explores the intense ideological struggle between the United States and Soviet Union, examining how their competition for global influence shaped international relations and continues to resonate in today's world.</p>
-                        <div class="mt-3">
-                            <a href="blog/cold-war-analysis.pdf" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-file-pdf me-2"></i>Read PDF
+                <!-- Presentation 2: Military Rule -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">The Economic Consequences of Military Rule</h3>
+                            <p class="card-text">An examination of how military governance affects economic development, stability, and growth across different regions and time periods.</p>
+                            <a href="presentations/military-rule.pptx" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-file-powerpoint me-2"></i>Download Presentation
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Third Article: World System Evolution -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <span class="article-date">January 2024</span>
-                        <h3 class="card-title">The Evolution of the World System: From Ancient Trade Networks to Contemporary Global Order</h3>
-                        <p class="card-text">Traces the transformation of global interconnections from ancient trade routes to today's digital age, revealing how international systems of commerce and power have evolved throughout history.</p>
-                        <div class="mt-3">
-                            <a href="blog/world-system-evolution.pdf" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-file-pdf me-2"></i>Read PDF
+                <!-- Presentation 3: Elections -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3 class="card-title">Elections in Bangladesh: Experiment with the Non-Party Caretaker Government</h3>
+                            <p class="card-text">A detailed study of Bangladesh's unique experience with the caretaker government system in managing electoral transitions.</p>
+                            <a href="presentations/caretaker-govt.pptx" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-file-powerpoint me-2"></i>Download Presentation
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-            <!-- Presentations Section -->
-<section id="presentations" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="section-title">Academic Presentations</h2>
-        <div class="row">
-            <!-- Presentation 1: Salinity -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h3 class="card-title">Increase in Water and Soil Salinity in Bangladesh</h3>
-                        <p class="card-text">A comprehensive analysis of the growing salinity crisis in Bangladesh, examining environmental impacts, socio-economic consequences, and potential solutions.</p>
-                        <a href="presentations/salinity.pptx" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-file-powerpoint me-2"></i>Download Presentation
-                        </a>
+    <!-- Blog/Publications Section -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Articles & Analysis</h2>
+            <div class="row">
+                <!-- First Article: Military Rule -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <span class="article-date">January 2024</span>
+                            <h3 class="card-title">The Economic Consequences of Military Rule: A Comparative Analysis</h3>
+                            <p class="card-text">An in-depth examination of how military regimes affect national economies, analyzing patterns across different regions and historical periods to understand the long-term impacts of military governance on economic development.</p>
+                            <div class="mt-3">
+                                <a href="blog/military-rule-analysis.pdf" class="btn btn-primary" target="_blank">
+                                    <i class="fas fa-file-pdf me-2"></i>Read PDF
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Presentation 2: Military Rule -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h3 class="card-title">The Economic Consequences of Military Rule</h3>
-                        <p class="card-text">An examination of how military governance affects economic development, stability, and growth across different regions and time periods.</p>
-                        <a href="presentations/military-rule.pptx" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-file-powerpoint me-2"></i>Download Presentation
-                        </a>
+                <!-- Second Article: Cold War -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <span class="article-date">January 2024</span>
+                            <h3 class="card-title">The Cold War and Its Battle for Global Ideological Dominance</h3>
+                            <p class="card-text">Explores the intense ideological struggle between the United States and Soviet Union, examining how their competition for global influence shaped international relations and continues to resonate in today's world.</p>
+                            <div class="mt-3">
+                                <a href="blog/cold-war-analysis.pdf" class="btn btn-primary" target="_blank">
+                                    <i class="fas fa-file-pdf me-2"></i>Read PDF
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Presentation 3: Elections -->
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h3 class="card-title">Elections in Bangladesh: Experiment with the Non-Party Caretaker Government</h3>
-                        <p class="card-text">A detailed study of Bangladesh's unique experience with the caretaker government system in managing electoral transitions.</p>
-                        <a href="presentations/caretaker-govt.pptx" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-file-powerpoint me-2"></i>Download Presentation
-                        </a>
+                <!-- Third Article: World System Evolution -->
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <span class="article-date">January 2024</span>
+                            <h3 class="card-title">The Evolution of the World System: From Ancient Trade Networks to Contemporary Global Order</h3>
+                            <p class="card-text">Traces the transformation of global interconnections from ancient trade routes to today's digital age, revealing how international systems of commerce and power have evolved throughout history.</p>
+                            <div class="mt-3">
+                                <a href="blog/world-system-evolution.pdf" class="btn btn-primary" target="_blank">
+                                    <i class="fas fa-file-pdf me-2"></i>Read PDF
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-5">
         <div class="container">
@@ -276,6 +310,18 @@ function toggleMore() {
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        function toggleMore() {
+            var moreText = document.getElementById("more");
+            var moreLink = document.getElementById("moreLink");
+            if (moreText.style.display === "none") {
+                moreText.style.display = "block";
+                moreLink.innerHTML = "Less";
+            } else {
+                moreText.style.display = "none";
+                moreLink.innerHTML = "More";
+            }
+        }
+    </script>
 </body>
 </html>
