@@ -54,13 +54,15 @@
         <h2 class="section-title">About Me</h2>
         <div class="row">
             <div class="col-md-6">
-                <p>I graduated from the University of Chittagong with a degree in Political Science and am currently studying for a Master's degree in the same discipline. My childhood in the historically and culturally rich city of Sylhet has had a significant impact on both my academic and personal interests. Geopolitics, warfare, and strategy are my main areas of interest; I pay special attention to current global geopolitical developments as well as political concerns in Bangladesh.</p>
+                <p>I am a Political Science graduate from the University of Chittagong, currently pursuing my Master's in the same field. I grew up in Sylhet, a city with a rich historical and cultural background, which has greatly influenced my academic and personal interests. My focus areas include geopolitics, warfare, and strategy, particularly recent world geopolitical events and Bangladeshi political issues.</p>
                 
-                <p>As the General Secretary of the Chittagong University Chess Club and a debater in the Chittagong University Debate Society (CUDS), where I also served as a competition judge, I have been actively involved in both leadership and debate. My discipline and leadership abilities were further refined throughout my tenure with the Bangladesh National Cadet Core (BNCC) through a variety of camps and exercises.</p>
+                <p>As the General Secretary of the Chittagong University Chess Club and a debater in the Chittagong University Debate Society (CUDS), where I also served as a competition judge, I have been actively involved in both leadership and debate.</p>
                 
-                <p>In addition to my studies, I have a strong interest in medieval geopolitics, the lifestyles of medieval lords, and the ruling systems of dynasties. I am also conducting research on contemporary political issues, including the impact of US Foreign Policy and NATO's Campaign in Afghanistan.</p>
+                <p id="more" style="display: none;">
+                    My discipline and leadership abilities were further refined throughout my tenure with the Bangladesh National Cadet Core (BNCC) through a variety of camps and exercises. In addition to my studies, I have a strong interest in medieval geopolitics, the lifestyles of medieval lords, and the ruling systems of dynasties. I am also conducting research on contemporary political issues, including the impact of US Foreign Policy and NATO's Campaign in Afghanistan. Through this platform, I aim to share my research and insights on politics, history, and global challenges. Feel free to connect if you would like to discuss these topics further.
+                </p>
                 
-                <p>Through this platform, I aim to share my research and insights on politics, history, and global challenges. Feel free to connect if you would like to discuss these topics further.</p>
+                <a href="javascript:void(0);" id="moreLink" onclick="toggleMore()" style="color: blue; text-decoration: underline;">More</a>
             </div>
             <div class="col-md-6">
                 <h3>Education</h3>
@@ -79,6 +81,21 @@
             </div>
         </div>
     </div>
+</section>
+
+<script>
+function toggleMore() {
+    var moreText = document.getElementById("more");
+    var moreLink = document.getElementById("moreLink");
+    if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        moreLink.innerHTML = "Less";
+    } else {
+        moreText.style.display = "none";
+        moreLink.innerHTML = "More";
+    }
+}
+</script>
 </section>
     <!-- Research Section -->
     <section id="research" class="py-5 bg-light">
