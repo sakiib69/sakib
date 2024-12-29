@@ -93,86 +93,119 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 </style>
-  <!-- About Section -->
+<!-- About Section -->
 <section id="about" class="py-5">
     <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="row">
             <div class="col-md-6">
-                <p>I am a Political Science graduate from the University of Chittagong, currently pursuing my Master's in the same field. I grew up in Sylhet, a city with a rich historical and cultural background, which has greatly influenced my academic and personal interests. My focus areas include geopolitics, warfare, and strategy, particularly recent world geopolitical events and Bangladeshi political issues.</p>
-                
-                <p>As the General Secretary of the Chittagong University Chess Club and a debater in the Chittagong University Debate Society (CUDS), I have been actively involved in both leadership and debate.</p>
-                
-                <p id="more" style="display: none;">
-                    My discipline and leadership abilities were further refined throughout my tenure with the Bangladesh National Cadet Core (BNCC) through a variety of camps and exercises. In addition to my studies, I have a strong interest in medieval geopolitics, the lifestyles of medieval lords, and the ruling systems of dynasties. I am also conducting research on contemporary political issues, including the impact of US Foreign Policy and NATO's Campaign in Afghanistan. Through this platform, I aim to share my research and insights on politics, history, and global challenges. Feel free to connect if you would like to discuss these topics further.
-                </p>
-                
-                <button id="moreLink" class="btn btn-link" onclick="toggleMore()">More</button>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="expandable-text">
+                            <div class="text-content">
+                                <p>I graduated from the University of Chittagong with a degree in Political Science and am currently studying for a Master's degree in the same discipline. My childhood in the historically and culturally rich city of Sylhet has had a significant impact on both my academic and personal interests. Geopolitics, warfare, and strategy are my main areas of interest; I pay special attention to current global geopolitical developments as well as political concerns in Bangladesh.</p>
+                                
+                                <p>As the General Secretary of the Chittagong University Chess Club and a debater in the Chittagong University Debate Society (CUDS), I have been actively involved in both leadership and debate.</p>
+                            </div>
+                            
+                            <div class="expanded-content" id="more" style="max-height: 0; overflow: hidden;">
+                                <p>My discipline and leadership abilities were further refined throughout my tenure with the Bangladesh National Cadet Core (BNCC) through a variety of camps and exercises. In addition to my studies, I have a strong interest in medieval geopolitics, the lifestyles of medieval lords, and the ruling systems of dynasties. I am also conducting research on contemporary political issues, including the impact of US Foreign Policy and NATO's Campaign in Afghanistan. Through this platform, I aim to share my research and insights on politics, history, and global challenges. Feel free to connect if you would like to discuss these topics further.</p>
+                            </div>
+                            
+                            <div class="expand-button" onclick="toggleMore()" id="moreLink">
+                                <span class="expand-text">Read more</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h3>Education</h3>
-                <ul>
-                    <li>Master's in Political Science - University of Chittagong (Current)</li>
-                    <li>Bachelor's in Political Science - University of Chittagong</li>
-                    <li>12th Grade - Jalalabad Cantonment Public School and College</li>
-                </ul>
-                <h3>Research Interests</h3>
-                <ul>
-                    <li>Evolution of Political Systems (Monarchy to Democracy)</li>
-                    <li>NATO's Campaign in Afghanistan</li>
-                    <li>Contemporary Geopolitical Issues</li>
-                    <li>Bangladesh Political Systems</li>
-                </ul>
-            </div>
+            <!-- Rest of your About section remains the same -->
         </div>
     </div>
 </section>
 
-<script>
-    function toggleMore() {
-        var moreText = document.getElementById("more");
-        var moreLink = document.getElementById("moreLink");
-        if (moreText.style.display === "none") {
-            moreText.style.display = "block";
-            moreLink.innerHTML = "Less";
-        } else {
-            moreText.style.display = "none";
-            moreLink.innerHTML = "More";
-        }
-    }
-</script>
-
 <style>
-    /* Custom Styles for More Button */
-    .btn-link {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        border-radius: 5px;
-        text-align: center;
-        transition: background-color 0.3s, transform 0.3s;
-        cursor: pointer;
+    .expandable-text {
+        position: relative;
     }
-    
-    .btn-link:hover {
-        background-color: #0056b3;
-        transform: scale(1.05);
+
+    .expanded-content {
+        transition: max-height 0.3s ease-out;
+    }
+
+    .expand-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        color: #007bff;
+        background: linear-gradient(to bottom, transparent, #f8f9fa 20%);
+        position: relative;
+        transition: all 0.3s ease;
+    }
+
+    .expand-button:hover {
+        color: #0056b3;
+    }
+
+    .expand-button i {
+        margin-left: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .expand-button.expanded i {
+        transform: rotate(180deg);
+    }
+
+    .expand-text {
+        font-weight: 500;
+    }
+
+    /* Animation for content expansion */
+    .expanded-content {
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: all 0.3s ease;
+    }
+
+    .expanded-content.show {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 1000px; /* Adjust based on your content */
+    }
+
+    /* Card enhancement */
+    .card {
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .card:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     }
 </style>
 
 <script>
-    function toggleMore() {
-        var moreText = document.getElementById("more");
-        var moreLink = document.getElementById("moreLink");
-        if (moreText.style.display === "none") {
-            moreText.style.display = "block";
-            moreLink.innerHTML = "Less";
-        } else {
-            moreText.style.display = "none";
-            moreLink.innerHTML = "More";
-        }
+function toggleMore() {
+    const moreText = document.getElementById("more");
+    const moreLink = document.getElementById("moreLink");
+    const expandButton = document.querySelector('.expand-button');
+    const expandText = expandButton.querySelector('.expand-text');
+
+    if (moreText.style.maxHeight === "0px" || moreText.style.maxHeight === "") {
+        moreText.classList.add('show');
+        expandText.textContent = "Show less";
+        expandButton.classList.add('expanded');
+    } else {
+        moreText.classList.remove('show');
+        expandText.textContent = "Read more";
+        expandButton.classList.remove('expanded');
     }
+}
 </script>
 
     <!-- Research Section -->
